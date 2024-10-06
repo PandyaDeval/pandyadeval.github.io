@@ -1,3 +1,6 @@
 iPortfolio.zip
 favicon_package_v0.16.zip
 projects.txt
+_site/
+node_modules/
+.DS_Store
