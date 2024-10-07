@@ -1,0 +1,70 @@
+{
+    "left-skills": [
+        {
+            "name": "Java",
+            "percent": 100
+        },
+        {
+            "name": "Amazon Web Services",
+            "percent": 80
+        },
+        {
+            "name": "Flask",
+            "percent": 80
+        },
+        {
+            "name": "NoSQL",
+            "percent": 60
+        },
+        {
+            "name": "Kubernetes",
+            "percent": 50
+        },
+        {
+            "name": "Linux",
+            "percent": 100
+        },
+        {
+            "name": "Git",
+            "percent": 100
+        },
+        {
+            "name": "CSS",
+            "percent": 90
+        }
+    ],
+    "right-skills": [
+        {
+            "name": "Python",
+            "percent": 100
+        },
+        {
+            "name": "Spring Boot",
+            "percent": 80
+        },
+        {
+            "name": "SQL",
+            "percent": 80
+        },
+        {
+            "name": "Docker",
+            "percent": 80
+        },
+        {
+            "name": "Tensorflow",
+            "percent": 100
+        },
+        {
+            "name": "JavaScript",
+            "percent": 75
+        },
+        {
+            "name": "HTML",
+            "percent": 100
+        },
+        {
+            "name": "NodeJS",
+            "percent": 30
+        }
+    ]
+}

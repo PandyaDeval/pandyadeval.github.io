@@ -1,0 +1,12 @@
+{
+    "name": "Deval Pandya",
+    "age": 25,
+    "city": "Phoenix, USA",
+    "location_link": "https://maps.app.goo.gl/XXyhgsNXrttNzKhK8",
+    "email": "devaljpandya@gmail.com",
+    "contact": {
+        "number": "+1-512-412-0861",
+        "link": "+15124120861"
+    },
+    "description": "Versatile Computer Science graduate with a robust academic foundation, including a 4.0 GPA in a Master's program from Arizona State University, and hands-on experience in data analysis, machine learning, and software engineering. Proven ability to develop scalable ML pipelines, optimize complex systems, and lead high-impact projects, demonstrated through internships and professional roles at JP Morgan Chase, ANB Systems, and research contributions at Arizona State University."
+}

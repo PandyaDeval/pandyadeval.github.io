@@ -8,7 +8,13 @@
   
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  {% if project-key %}
+    <title>{{ portfolio.projects[project-key].title }}</title>
+  {% else %}
   <title>{{ title }}</title>
+  {% endif %}
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,13 +53,13 @@
 
 <body class="{{ body-class }}">
 
-    {% include "header.html" %}
+    {% render "header.html" %}
 
     <main class="main">
         {{ content }}
     </main>
 
-    {% include "footer.html" %}
+    {% render "footer.html" %}
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
