@@ -1,0 +1,74 @@
+{
+    "link-prefix": "/portfolio",
+    "images-link-prefix": "/assets/img/portfolio",
+    "categories": [
+        {
+            "filter-class-suffix": "web-dev",
+            "filter-name": "Web Development"
+        },
+        {
+            "filter-class-suffix": "ml",
+            "filter-name": "Machine Learning"
+        },
+        {
+            "filter-class-suffix": "cloud",
+            "filter-name": "Cloud Computing"
+        }
+    ],
+    "projects": [
+        {
+            "title": "VAST 2021 Mini-Challenge 2",
+            "link-suffix": "vast-mc-2021",
+            "type": "Data Visualization",
+            "filter-class-suffix": "web-dev"
+        },
+        {
+            "title": "Video Frame Interpolation",
+            "link-suffix": "video-frame-interpolation",
+            "type": "Digital Video Processing",
+            "filter-class-suffix": "ml"
+        },
+        {
+            "title": "Hybrid Cloud Image Processing",
+            "link-suffix": "hybrid-cloud",
+            "type": "Cloud Computing",
+            "filter-class-suffix": "cloud"
+        },
+        {
+            "title": "Arrhythmia Classification",
+            "link-suffix": "arrhythmia-classification",
+            "type": "Statistical Machine Learning",
+            "filter-class-suffix": "ml"
+        },
+        {
+            "title": "Sentiment Analysis on Social Media Text",
+            "link-suffix": "sentiment-analysis",
+            "type": "Natural Language Processing",
+            "filter-class-suffix": "ml"
+        },
+        {
+            "title": "AI Image Colorization",
+            "link-suffix": "ai-color",
+            "type": "Image Processing &amp; Machine Learning",
+            "filter-class-suffix": "ml"
+        },
+        {
+            "title": "Chatbot as Personal Assistant",
+            "link-suffix": "virtual-assistant",
+            "type": "Natural Language Processing",
+            "filter-class-suffix": "ml"
+        },
+        {
+            "title": "Blogging Site",
+            "link-suffix": "blog-site",
+            "type": "PHP Application",
+            "filter-class-suffix": "web-dev"
+        },
+        {
+            "title": "Online Examination System",
+            "link-suffix": "online-examination-system",
+            "type": "PHP Application",
+            "filter-class-suffix": "web-dev"
+        }
+    ]
+}
