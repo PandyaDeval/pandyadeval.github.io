@@ -15,60 +15,177 @@
             "filter-name": "Cloud Computing"
         }
     ],
-    "projects": [
-        {
+    "projects": {
+        "vast-mc-2021": {
             "title": "VAST 2021 Mini-Challenge 2",
-            "link-suffix": "vast-mc-2021",
             "type": "Data Visualization",
-            "filter-class-suffix": "web-dev"
+            "start-date": "January 2023",
+            "end-date": "May 2023",
+            "link-suffix": "vast-mc-2021",
+            "filter-class-suffix": "web-dev",
+            "description-items": [
+                "For the VAST Challenge 2021 Mini-Challenge 2, I focused on analyzing the disappearance of GAStech employees by leveraging geospatial and transaction data. My role involved creating a graphical analytics system that included seven visualizations designed to uncover patterns of suspicious behavior among employees. Using D3.js and Python Flask, I implemented features like a symbol map, stacked bar charts, and heat maps to visualize movement and transaction data effectively. I also optimized data processing to enhance responsiveness, ensuring that complex queries could be addressed efficiently. This project not only honed my skills in data visualization but also deepened my understanding of geospatial analysis and its practical applications in real-world scenarios."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png"
+            ]
         },
-        {
+        "video-frame-interpolation": {
             "title": "Video Frame Interpolation",
-            "link-suffix": "video-frame-interpolation",
             "type": "Digital Video Processing",
-            "filter-class-suffix": "ml"
+            "start-date": "August 2023",
+            "end-date": "December 2023",
+            "link-suffix": "video-frame-interpolation",
+            "filter-class-suffix": "ml",
+            "description-items": [
+                "This project enhances video frame interpolation by using a convolutional neural network (CNN) to estimate two 1D kernels, reducing memory requirements compared to traditional 2D kernel methods. We extracted consecutive frames from YouTube videos and applied data augmentation techniques to create a training dataset.",
+                "A custom loss function combining L1 loss, VGG19 features, and SSIM was developed to improve perceptual accuracy, resulting in sharper interpolated images. The model performed well on real-life videos with moderate motion, though challenges arose with larger motions and high-resolution inputs. This work provides an efficient solution for high-quality video frame interpolation."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png"
+            ]
         },
-        {
+        "hybrid-cloud": {
             "title": "Hybrid Cloud Image Processing",
-            "link-suffix": "hybrid-cloud",
             "type": "Cloud Computing",
-            "filter-class-suffix": "cloud"
+            "start-date": "August 2022",
+            "end-date": "December 2022",
+            "link-suffix": "hybrid-cloud",
+            "filter-class-suffix": "cloud",
+            "description-items": [
+                "This project aims to develop a scalable cloud-based web application that performs image recognition in a hybrid cloud environment using AWS and OpenStack. The application dynamically manages resources by scaling up or down the number of processing instances based on the volume of incoming user requests. Key AWS services utilized include EC2 for computation, SQS for message queuing, and S3 for storage, while OpenStack is used to create a private cloud infrastructure. The web app is designed with three main components: a web tier for handling user requests, a controller to manage auto-scaling, and an app tier that processes image recognition tasks. Auto-scaling ensures that the system can handle varying loads efficiently by launching or terminating instances as needed.",
+                "The project demonstrates how cloud infrastructure can be optimized to manage workloads dynamically, ensuring cost efficiency and resource availability. The team also implemented a caching mechanism to reduce response times and enhanced the auto-scaling logic to overcome issues like inconsistent queue reporting and unnecessary polling of SQS queues. This application provides a practical solution for handling high-traffic workloads in a cloud environment, showcasing key concepts of hybrid cloud computing, image processing, and resource optimization."
+            ],
+            "images": [
+                "1.png"
+            ]
         },
-        {
+        "arrhythmia-classification": {
             "title": "Arrhythmia Classification",
-            "link-suffix": "arrhythmia-classification",
             "type": "Statistical Machine Learning",
-            "filter-class-suffix": "ml"
+            "start-date": "September 2022",
+            "end-date": "December 2022",
+            "link-suffix": "arrhythmia-classification",
+            "filter-class-suffix": "ml",
+            "description-items": [
+                "This project focuses on classifying arrhythmia, an irregular heartbeat condition, using the MIT-BIH Arrhythmia dataset. Various supervised learning models, including Naive Bayes, Decision Tree, 1D-CNN, and Deep Neural Networks, were employed. The key challenge addressed was class imbalance, with 75% of the data representing normal heartbeats. Data augmentation and reduction techniques were applied for fairness. 1D-CNN proved most effective, achieving high accuracy and recall in classifying arrhythmia types, offering a robust solution for real-time ECG signal analysis."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png"
+            ]
         },
-        {
+        "sentiment-analysis": {
             "title": "Sentiment Analysis on Social Media Text",
+            "type": "Natural Language Processing",
+            "start-date": "August 2019",
+            "end-date": "May 2020",
             "link-suffix": "sentiment-analysis",
-            "type": "Natural Language Processing",
-            "filter-class-suffix": "ml"
+            "filter-class-suffix": "ml",
+            "description-items": [
+                "This project explores Sentiment Analysis on Social Media Text using a graph-based database (Neo4j). By analyzing tweets obtained via the Twitter API, the sentiment values (positive, negative, or neutral) of users are determined. These sentiments are modeled in a graph database to study user behavior, establish connections, and understand trends in public opinion. Machine Learning techniques, including SVM and LSTM, are employed to classify sentiment and categorize tweets across topics like education, politics, and sports. This analysis can be applied in fields such as advertising, mental health monitoring, and customer sentiment analysis."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png"
+            ]
         },
-        {
+        "ai-color": {
             "title": "AI Image Colorization",
-            "link-suffix": "ai-color",
             "type": "Image Processing &amp; Machine Learning",
-            "filter-class-suffix": "ml"
+            "start-date": "August 2018",
+            "end-date": "March 2019",
+            "link-suffix": "ai-color",
+            "filter-class-suffix": "ml",
+            "description-items": [
+                "This project, AI Image Colorization, focuses on using machine learning techniques to automatically colorize black-and-white images. Conducted over six months (August 2018 to January 2019), the project aimed to develop a model capable of predicting realistic colors for grayscale images. We followed a structured process, including data collection, neural network model creation, and multiple iterations to improve accuracy. A convolutional neural network (CNN) was employed to process image channels, and the project advanced to using UNET and GAN models for better results. This work was guided by Team Drishti, with future plans to enhance the model's capabilities using additional computing resources."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png"
+            ]
         },
-        {
+        "virtual-assistant": {
             "title": "Chatbot as Personal Assistant",
-            "link-suffix": "virtual-assistant",
             "type": "Natural Language Processing",
-            "filter-class-suffix": "ml"
+            "start-date": "January 2020",
+            "end-date": "May 2020",
+            "link-suffix": "virtual-assistant",
+            "filter-class-suffix": "ml",
+            "description-items": [
+                "This project, titled \"Chatbot as Personal Assistant\", involves developing a chatbot capable of performing various tasks using Natural Language Processing (NLP), Artificial Intelligence (AI), and Machine Learning (ML). The chatbot offers functionalities such as setting reminders, telling jokes, providing weather updates, and performing web searches, among others. The system utilizes tokenization, entity extraction, and intent classification to interpret user queries and respond appropriately. Implemented using various NLP tools like SpacyTokenizer and CRFEntityExtractor, the project demonstrates the chatbot’s architecture, pipeline, and decision-making process using policies defined in the RASA framework."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png"
+            ]
         },
-        {
+        "blog-site": {
             "title": "Blogging Site",
+            "type": "PHP Application",
+            "start-date": "August 2018",
+            "end-date": "December 2018",
             "link-suffix": "blog-site",
-            "type": "PHP Application",
-            "filter-class-suffix": "web-dev"
+            "filter-class-suffix": "web-dev",
+            "description-items": [
+                "For my project, I developed a dynamic blogging website using HTML, CSS, JavaScript, PHP, and MySQL. The website features a home page that displays all published blogs, allowing users to browse content easily. It includes sign-in and registration pages, enabling users to create accounts and log in to access additional features. Once signed in, users can like and comment on blog posts, enhancing interactivity.",
+                "Users have the ability to add, edit, and delete their own blogs, giving them full control over their content. A robust search feature with an auto-complete function allows visitors to quickly find blogs based on keywords, improving the overall user experience. The project combines clean design with functional user engagement and management capabilities."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png"
+            ]
         },
-        {
+        "online-examination-system": {
             "title": "Online Examination System",
-            "link-suffix": "online-examination-system",
             "type": "PHP Application",
-            "filter-class-suffix": "web-dev"
+            "start-date": "January 2018",
+            "end-date": "May 2018",
+            "link-suffix": "online-examination-system",
+            "filter-class-suffix": "web-dev",
+            "description-items": [
+                "This was one of the first web applications I developed. I developed an Online Exam System using the AMP stack (Apache, MySQL, PHP). The application includes a client-side interface where new users can register, access personalized student profiles, view subjects based on their academic year, and check results from previous tests. On the admin side, the system allows for the addition or removal of questions from the database, viewing results for all registered users, and access to the complete user database, ensuring efficient management of the examination process."
+            ],
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png"
+            ]
         }
-    ]
+    }
 }

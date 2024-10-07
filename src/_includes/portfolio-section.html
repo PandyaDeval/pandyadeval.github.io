@@ -20,14 +20,14 @@
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             {% for project in portfolio.projects %}
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ project.filter-class-suffix }}">
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ project[1].filter-class-suffix }}">
                 <div class="portfolio-content h-100">
-                    <img src="{{ portfolio.images-link-prefix }}/{{ project.link-suffix }}/1.png" class="img-fluid" alt="">
+                    <img src="{{ portfolio.images-link-prefix }}/{{ project[1].link-suffix }}/1.png" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                    <h4>{{ project.title }}</h4>
-                    <p>{{ project.type }}</p>
-                    <a href="{{ portfolio.images-link-prefix }}/{{ project.link-suffix }}/1.png" title="{{ project.title }}" data-gallery="portfolio-gallery-{{ project.filter-class-suffix }}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ portfolio.link-prefix }}/{{ project.link-suffix }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <h4>{{ project[1].title }}</h4>
+                    <p>{{ project[1].type }}</p>
+                    <a href="{{ portfolio.images-link-prefix }}/{{ project[1].link-suffix }}/1.png" title="{{ project[1].title }}" data-gallery="portfolio-gallery-{{ project[1].filter-class-suffix }}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="{{ portfolio.link-prefix }}/{{ project[1].link-suffix }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                 </div>
                 </div><!-- End Portfolio Item -->

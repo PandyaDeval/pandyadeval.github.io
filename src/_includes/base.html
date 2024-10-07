@@ -8,7 +8,13 @@
   
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  {% if project-key %}
+    <title>{{ portfolio.projects[project-key].title }}</title>
+  {% else %}
   <title>{{ title }}</title>
+  {% endif %}
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
