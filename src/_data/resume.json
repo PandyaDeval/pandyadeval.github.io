@@ -1,0 +1,84 @@
+{
+    "file": "/assets/resumes/Deval_Pandya_Resume.pdf",
+    "educations": [
+        {
+            "degree": "Master of Science",
+            "major": "Computer Science",
+            "start-date": "2022",
+            "end-date": "2024",
+            "university": "Arizona State University",
+            "location": "Tempe, USA",
+            "gpa": "4.0 out of 4.0"
+        },
+        {
+            "degree": "Bachelor of Technology",
+            "major": "Computer Engineering",
+            "start-date": "2016",
+            "end-date": "2020",
+            "university": "Sardar Vallabhbhai National Institute of Technology",
+            "location": "Surat, India",
+            "gpa": "8.04 out of 10.0"
+        }
+    ],
+    "experiences": [
+        {
+            "position": "Data Analyst Intern",
+            "start-date": "January 2024",
+            "end-date": "May 2024",
+            "company": "ANB Systems LLC",
+            "location": "Houston, USA",
+            "bullets": [
+                "Developed and deployed a scalable, automated ML pipeline using AWS services to streamline model training, improving turnaround time and resource efficiency for various ML models",
+                "Enhanced the company’s existing ML architecture by integrating active learning mechanisms and standardizing workflows, resulting in significant reduction of manual processes and enabling seamless future model integration and updates"
+            ]
+        },
+        {
+            "position": "Research Aide",
+            "start-date": "November 2022",
+            "end-date": "January 2024",
+            "company": "Arizona State University",
+            "location": "Tempe, USA",
+            "bullets": [
+                "Performance tuned a CNN-LSTM model to predict the trajectory of an airplane based on its 3 control surfaces in a NASA project",
+                "Achieved precision of upto 0.04 mm for predicting the location of a solder joint crack on a PCB using AE sensor data in an Intel Project"
+            ]
+        },
+        {
+            "position": "Software Engineer",
+            "start-date": "August 2020",
+            "end-date": "August 2022",
+            "company": "JP Morgan Chase",
+            "location": "Mumbai, India",
+            "bullets": [
+                "Managed to reduce the overhead of a critical application by 90% along with increasing its availability and performance",
+                "Solved several production issues as well as security vulnerabilities and also took part in many production deployments for the products",
+                "Successfully achieved a modernization task for an application by updating its authentication methods from SAML to OAuth2",
+                "Developed and optimized efficient SQL routines and procedures for multiple applications"
+            ]
+        },
+        {
+            "position": "Software Engineer Intern",
+            "start-date": "May 2019",
+            "end-date": "July 2019",
+            "company": "JP Morgan Chase",
+            "location": "Mumbai, India",
+            "bullets": [
+                "Created a cloud-native chatbot for helping new hires with the on-boarding process interactively",
+                "Developed features like following various story lines to help the user with the process",
+                "Utilized Kubernetes clusters to host back-end and front-end servers for improving performance, security and availability"
+            ]
+        },
+        {
+            "position": "Summer Intern",
+            "start-date": "May 2018",
+            "end-date": "July 2018",
+            "company": "MobileFirst Applications",
+            "location": "Ahmedabad, India",
+            "bullets": [
+                "Implemented basic sentimental analysis on tweets using NLP and probabilistic models",
+                "Developed a portable air quality checker using various gas sensors to collect appropriate data",
+                "The collected data is then sent to an online database using the WiFi module"
+            ]
+        }
+    ]
+}

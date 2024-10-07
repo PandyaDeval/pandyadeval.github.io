@@ -2,45 +2,6 @@
 title: Deval Pandya Portfolio
 layout: base.html
 body-class: index-page
-about-me:
-  name: Deval Pandya
-  age: 25
-  city: Phoenix, USA
-  email: devaljpandya@gmail.com
-left-skills:
-  - name: Java
-    percent: 100
-  - name: Amazon Web Services
-    percent: 100
-  - name: Flask
-    percent: 80
-  - name: NoSQL
-    percent: 60
-  - name: Kubernetes
-    percent: 60
-  - name: Linux
-    percent: 100
-  - name: Git
-    percent: 100
-  - name: CSS
-    percent: 90
-right-skills:
-  - name: Python
-    percent: 100
-  - name: Spring Boot
-    percent: 80
-  - name: SQL
-    percent: 80
-  - name: Docker
-    percent: 80
-  - name: Tensorflow
-    percent: 100
-  - name: JavaScript
-    percent: 75
-  - name: HTML
-    percent: 100
-  - name: NodeJS
-    percent: 30
 ---
 
 
@@ -48,9 +9,9 @@ right-skills:
 
 {% render "about-section.html", about-me: about-me %}
 
-{% render "skills-section.html", left-skills: left-skills, right-skills: right-skills %}
+{% render "skills-section.html", skills: skills %}
 
-{% render "resume-section.html" %}
+{% render "resume-section.html", resume: resume, about-me: about-me %}
 
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section light-background">
@@ -195,51 +156,4 @@ right-skills:
 
 </section><!-- /Portfolio Section -->
 
-<!-- Contact Section -->
-<section id="contact" class="contact section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 justify-content-center">
-
-      <div class="col-lg-5">
-
-        <div class="info-wrap">
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-geo-alt flex-shrink-0"></i>
-            <div>
-              <h3>Address</h3>
-              <p><a href="https://maps.app.goo.gl/XXyhgsNXrttNzKhK8" target="_blank">Phoenix, Arizona, USA</a></p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-telephone flex-shrink-0"></i>
-            <div>
-              <h3>Call</h3>
-              <p><a href="tel:+15124120861">+1-512-412-0861</a></p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <i class="bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h3>Email</h3>
-              <p><a href="mailto:devaljpandya@gmail.com">devaljpandya@gmail.com</a></p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section><!-- /Contact Section -->
+{% include "contact-section.html", about-me: about-me %}
