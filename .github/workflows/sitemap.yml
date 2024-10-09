@@ -1,0 +1,24 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main
+      - iPortfolio-main
+      - 11ty-iPortfolio-main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Generate sitemap
+        run: |
+          npm install -g sitemap-generator-cli
+          sitemap-generator https://pandyadeval.github.io/ --output ./sitemap.xml
+      - name: Commit sitemap
+        run: |
+          git add sitemap.xml
+          git commit -m "Generate sitemap"
+          git push
