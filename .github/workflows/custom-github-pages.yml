@@ -65,7 +65,7 @@ jobs:
 
       # Commit and push the sitemap if there are changes
       - name: Commit sitemap
-        if: ${{ always() && steps.diff.outputs.changed == 'true' }}
+        if: env.changed == 'true'
         run: |
           git config --global user.name ${{ secrets.GIT_USER_NAME }}
           git config --global user.email ${{ secrets.GIT_USER_EMAIL }}
