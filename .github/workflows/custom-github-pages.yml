@@ -56,6 +56,7 @@ jobs:
       - name: Check for sitemap changes
         run: |
           git diff --exit-code docs/sitemap.xml || echo "Sitemap has changed."
+          echo ${{ steps.diff }}
 
       # Commit and push the sitemap if there are changes
       - name: Commit sitemap
