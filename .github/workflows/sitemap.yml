@@ -27,7 +27,9 @@ jobs:
       run: npx sitemap-generator-cli https://pandyadeval.github.io/ -p "1.0,0.5"
 
     - name: Move generated sitemap
-      run: mv sitemap docs/.
+      run: |
+        ls -ltr sitemap.xml
+        mv sitemap.xml docs/.
 
     - name: Check for sitemap changes
       run: |
