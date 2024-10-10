@@ -1,0 +1,18 @@
+---
+title: Deval Pandya Portfolio
+layout: base.html
+body-class: index-page
+---
+
+
+{% render "hero-section.html", name: about-me.name %}
+
+{% render "about-section.html", about-me: about-me %}
+
+{% render "skills-section.html", skills: skills %}
+
+{% render "resume-section.html", resume: resume, about-me: about-me %}
+
+{% render "portfolio-section.html", portfolio: portfolio %}
+
+{% render "contact-section.html", about-me: about-me %}

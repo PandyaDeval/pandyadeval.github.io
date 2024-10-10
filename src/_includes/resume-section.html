@@ -1,0 +1,61 @@
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>
+        Resume  
+        </h2> 
+        <a href="{{ resume.file }}" target="_blank"><i class="bi bi-download fs-4"></i></a>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+            <h4>{{ about-me.name }}</h4>
+            <p><em>{{ about-me.description }}</em></p>
+            <ul>
+                <li>{{ about-me.city }}</li>
+                <li>{{ about-me.contact.number }}</li>
+                <li>{{ about-me.email }}</li>
+            </ul>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+
+            {% for education in resume.educations %}
+                <div class="resume-item">
+                    <h4>{{ education.degree }} - {{ education.major }}</h4>
+                    <h5>{{ education.start-date }} - {{ education.end-date }}</h5>
+                    <p><em>{{ education.university }}, {{ education.location }}</em></p>
+                    <p>GPA: {{ education.gpa }}</p>
+                </div><!-- End Resume Item -->
+            {% endfor %}
+
+            <h3 class="resume-title">Professional Experience</h3>
+
+            {% for experience in resume.experiences %}
+                <div class="resume-item">
+                    <h4>{{ experience.position }}</h4>
+                    <h5>{{ experience.start-date }} - {{ experience.end-date }}</h5>
+                    <p><em>{{ experience.company }}, {{ experience.location }}</em></p>
+                    <ul>
+                        {% for bullet in experience.bullets %}
+                            <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                </div><!-- End Resume Item -->
+            {% endfor %}
+
+        </div>
+
+        </div>
+
+    </div>
+
+</section><!-- /Resume Section -->

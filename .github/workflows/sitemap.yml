@@ -1,0 +1,49 @@
+name: generate-xml-sitemap
+
+on:
+  workflow_dispatch:
+  # workflow_run:
+  #   workflows: [pages-build-deployment]  # Name of your publishing workflow
+  #   types: [completed]
+  #   branches: [11ty-iPortfolio-main]
+
+# on:
+#   push:
+#     branches:
+#     - 11ty-iPortfolio-dev
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.4
+
+    - name: Run sitemap-generator
+      run: npx sitemap-generator-cli https://pandyadeval.github.io/ -p "1.0,0.5"
+
+    - name: Move generated sitemap
+      run: |
+        ls -ltr sitemap.xml
+        mv sitemap.xml docs/.
+
+    - name: Check for sitemap changes
+      run: |
+        git diff --exit-code docs/sitemap.xml || echo "Sitemap has changed."
+
+    # Commit and push the sitemap if there are changes
+    - name: Commit sitemap
+      if: ${{ always() && steps.diff.outputs.changed == 'true' }}
+      run: |
+        git config --global user.name ${{ secrets.GIT_USER_NAME }}
+        git config --global user.email ${{ secrets.GIT_USER_EMAIL }}
+        git add docs/sitemap.xml
+        git commit -m "Updated Sitemap" || echo "No changes to commit"
+        git push origin ${{ github.ref }}
