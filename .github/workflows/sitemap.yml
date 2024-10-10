@@ -1,10 +1,11 @@
 name: generate-xml-sitemap
 
 on:
-  workflow_run:
-    workflows: [pages-build-deployment]  # Name of your publishing workflow
-    types: [completed]
-    branches: [11ty-iPortfolio-main]
+  workflow_dispatch:
+  # workflow_run:
+  #   workflows: [pages-build-deployment]  # Name of your publishing workflow
+  #   types: [completed]
+  #   branches: [11ty-iPortfolio-main]
 
 # on:
 #   push:
