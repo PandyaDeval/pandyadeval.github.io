@@ -186,6 +186,20 @@
                 "7.png",
                 "8.png"
             ]
+        },
+        "test-project": {
+            "title": "Test Project",
+            "type": "PHP Application",
+            "start-date": "January 2018",
+            "end-date": "May 2018",
+            "link-suffix": "test-project",
+            "filter-class-suffix": "web-dev",
+            "description-items": [
+                "This was one of the first web applications I developed. I developed an Online Exam System using the AMP stack (Apache, MySQL, PHP). The application includes a client-side interface where new users can register, access personalized student profiles, view subjects based on their academic year, and check results from previous tests. On the admin side, the system allows for the addition or removal of questions from the database, viewing results for all registered users, and access to the complete user database, ensuring efficient management of the examination process."
+            ],
+            "images": [
+                "1.png"
+            ]
         }
     }
 }
